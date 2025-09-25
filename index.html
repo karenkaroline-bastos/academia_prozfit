@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia ProzFit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho fixo com logo e menu -->
+    <header>
+        <nav>
+            <!-- Logo à esquerda -->
+            <div class="logo">
+                <a href="#inicio">
+                    <img src="/imagens/Logotipo.png" alt="logo ProzFit" class="logo-apresentacao">
+                </a>
+            </div>
+
+            <!-- Menu à direita -->
+            <ul class="menu">
+                <li><a class="menu-item" href="#sobre-nos">Sobre Nós</a></li>
+                <li><a class="menu-item" href="#planos-aulas">Planos | Aulas</a></li>
+                <li><a class="menu-item" href="#fale-conosco">Fale Conosco</a></li>
+            </ul>
+        </nav>   
+    </header>
+
+    <!-- Banner principal com carrossel -->
+    <section class="carousel" id="inicio">
+        <div class="carousel-overlay">
+            <h1>SEJA SEU MELHOR<br>Sua jornada começa na Academia ProzFit.</h1>
+            <a href="#fale-conosco" class="btn-contato">Fale Conosco</a>
+        </div>
+    </section>
+
+    <main>
+        <!-- Seção Sobre Nós -->
+        <section id="sobre-nos" class="section-bg sobre-nos-bg">
+            <h2>Sobre Nós</h2>
+            <h3>A <strong>ProzFit</strong> é uma academia que acredita na transformação de vidas através da saúde, disciplina e movimento. 
+            <br>
+            A Academia StationFit tem como objetivo, não apenas promover a parte estética de nossos clientes, e mas também nos preocupamos com a <strong>saúde física e mental</strong>.<br>
+            <br>
+            <br>Presamos por um <strong>atendimento personalizado</strong>, que se inicia na avalição física e continua na montagem de treino de acordo com as necessidades individuais. 
+            <br>
+            <br>Temos uma equipe que está sempre disposta a da assistência para que sua experiência seja a melhor possível.
+            <br>
+            <br>Oferecemos opções de exercícios para melhor atender e disponibilizar <strong>variedade de atividades</strong> para que você não precise parar de treinar ou desanimar em seu exercício diário que é tão importante para a saúde.
+            <br>Nossa equipe é composta por profissionais qualificados, prontos para ajudar você a alcançar seus objetivos, seja ganhar massa, perder peso ou manter um estilo de vida saudável.</h3>
+        </section>
+
+        <!-- Seção Planos e Aulas -->
+        <section id="planos-aulas" class="section-bg planos-bg">
+            <h2>Planos e Aulas</h2>
+
+            <h3>Nossos Planos</h3>
+            <ul>
+                <li><strong>Plano Mensal:</strong> R$ 99,90</li>
+                <li><strong>Plano Trimestral:</strong> R$ 249,90</li>
+                <li><strong>Plano Anual:</strong> R$ 799,90</li>
+            </ul>
+
+            <h3>Aulas Disponíveis</h3>
+            <!-- Cards de aulas -->
+            <div class="cards-container">
+                <div class="card">
+                    <img src="/imagens/musculacao.png" alt="Musculação">
+                    <h4>Musculação</h4>
+                    <p>Treinos com foco em força, resistência e hipertrofia.</p>
+                </div>
+                <div class="card">
+                    <img src="/imagens/natacao.png" alt="Natacao">
+                    <h4>Natação</h4>
+                    <p>Exercícios aquático que ensina técnicas de nado, promove o desenvolvimento físico e motor.</p>
+                </div>
+                <div class="card">
+                    <img src="/imagens/spinning.png" alt="Spinning">
+                    <h4>Spinning</h4>
+                    <p>Aulas de bicicleta indoor com muita energia.</p>
+                </div>
+                <div class="card">
+                    <img src="/imagens/yoga.png" alt="Yoga">
+                    <h4>Yoga</h4>
+                    <p>Equilíbrio entre corpo e mente com técnicas milenares.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Fale Conosco -->
+        <section id="fale-conosco" class="section-bg fale-bg">
+            <h2>Fale Conosco</h2>
+            <p>Entre em contato com a nossa equipe para tirar dúvidas ou agendar sua visita!</p>
+            
+            <!-- Formulário de contato -->
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Seção Localização -->
+        <section id="localizacao">
+        <h2>Nossa Localização</h2>
+        <h3>Venha nos visitar na unidade ProzFit!</h3>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.859720734174!2d-46.639557685021676!3d-23.50818698470721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c9b9e2c1e7%3A0xd6d38d65ff1fcd93!2sAcademia!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </section>
+
+        <!-- Botão Chatbot -->
+        <div class="chatbot-button">
+            💬
+        </div>
+    </main>
+
+    <footer class="rodape__pagina">
+        <p>Desenvolvido pela equipe projeto viva sua profissão.</p>
+        <p>Arthur Alves, Athhur e Karen Bastos</p>
+        <p>Proz - 2025</p>
+    </footer>
+
+    <!-- Script do carrossel -->
+    <script src="script.js"></script>
+</body>
+</html>
