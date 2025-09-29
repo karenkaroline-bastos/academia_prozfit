@@ -66,10 +66,10 @@ nav {
 }
 
 @keyframes slide {
-    0%   { background-image: url('/imagens/banner1.png'); }
-    33%  { background-image: url('/imagens/banner2.png'); }
-    66%  { background-image: url('/imagens/banner3.png'); }
-    100% { background-image: url('/imagens/banner1.png'); }
+    0%   { background-image: url('/academia_prozfit-main/imagens/banner1.png'); }
+    33%  { background-image: url('/academia_prozfit-main/imagens/banner2.png'); }
+    66%  { background-image: url('/academia_prozfit-main/imagens/banner3.png'); }
+    100% { background-image: url('/academia_prozfit-main/imagens/banner1.png'); }
 }
 
 .carousel-overlay {
@@ -110,7 +110,7 @@ nav {
 }
 
 .sobre-nos-bg {
-    background-image: url('/imagens/sobre.png');
+    background-image: url('/academia_prozfit-main/imagens/sobre.png');
 }
 
 .sobre-nos{
@@ -132,11 +132,11 @@ h3{
 }
 
 .planos-bg {
-    background-image: url('/imagens/planos.png');
+    background-image: url('/academia_prozfit-main/imagens/planos.png');
 }
 
 .fale-bg {
-    background-image: url('/imagens/contato.png');
+    background-image: url('/academia_prozfit-main/imagens/contato.png');
 }
 
 /* ===== CARDS ===== */
