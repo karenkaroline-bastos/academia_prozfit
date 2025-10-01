@@ -2,7 +2,7 @@
 // Script interatividade ProzFit
 // =============================
 
-// 1) Carrossel de imagens no banner principal
+// Carrossel de imagens no banner principal
 let imagens = [
     "/imagens/banner1.png",
     "/imagens/banner2.png",
@@ -17,7 +17,7 @@ function trocarImagem() {
 }
 setInterval(trocarImagem, 4000); // Troca a cada 4s
 
-// 2) Rolagem suave ao clicar no menu
+// Rolagem suave ao clicar no menu
 document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener("click", function(e) {
         e.preventDefault();
@@ -26,7 +26,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     });
 });
 
-// 3) Botão "Voltar ao Topo"
+// Botão "Voltar ao Topo"
 const botaoTopo = document.createElement("div");
 botaoTopo.innerText = "⬆";
 botaoTopo.classList.add("voltar-topo");
@@ -44,13 +44,20 @@ botaoTopo.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-// 4) Chatbot simples
+// Chatbot simples
 const chatbotBtn = document.querySelector(".chatbot-button");
+
 chatbotBtn.addEventListener("click", () => {
-    alert("Olá! 👋 Como posso ajudar você na ProzFit?");
+    const numero = "5531983488464";
+    const mensagem = "Olá! Gostaria de saber mais sobre a Academia ProzFit"; 
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+    
+    // abre o WhatsApp em uma nova aba
+    window.open(url, "_blank");
 });
 
-// 5) Animação de fade-in nas seções
+
+// Animação de fade-in nas seções
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {

@@ -122,13 +122,17 @@ nav {
 }
 
 h2{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     color: #ff6600;
 }
 
 h3{
     margin-bottom: 20px;
     color: #000000;
+}
+.h3_localiza{
+    margin-bottom: 20px;
+    color: #f1f0f0;
 }
 
 .planos-bg {
@@ -233,12 +237,47 @@ button:hover {
     transform: scale(1.1);
 }
 
-/* ===== RODAPÉ ===== */
-.rodape__pagina {
-    background-color: #060606;
-    color: #ffffff;
-    padding: 15px;
+.section-bg.localizacao-bg {
+    height: 80vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
+    background-color: #2b2929;
+}
+
+
+
+/* ===== RODAPÉ ===== */
+footer {
+    background-color: #000; /* fundo preto */
+    color: #fff; /* texto branco */
+    padding: 20px 50px;
+    text-align: center;
+}
+
+footer .social-icons {
+    margin: 10px 0;
+}
+
+footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #cc5200;
+}
+
+footer p {
+    margin-top: 5px;
+    font-size: 14px;
+    opacity: 0.8;
 }
 
 /* ===== RESPONSIVIDADE ===== */
