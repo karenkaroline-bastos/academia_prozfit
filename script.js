@@ -17,12 +17,38 @@ function trocarImagem() {
 }
 setInterval(trocarImagem, 4000); // Troca a cada 4s
 
-// Rolagem suave ao clicar no menu
+// Rolagem suave e lenta ao clicar no menu
+function scrollLento(target, duration) {
+    let start = window.scrollY;
+    let end = target.getBoundingClientRect().top + window.scrollY - 70; // ajuste para menu fixo
+    let distance = end - start;
+    let startTime = null;
+
+    function animacaoScroll(currentTime) {
+        if (!startTime) startTime = currentTime;
+        let timeElapsed = currentTime - startTime;
+        let progress = Math.min(timeElapsed / duration, 1);
+
+        // Ease-in-out (acelera e desacelera)
+        let ease = progress < 0.5
+            ? 2 * progress * progress
+            : -1 + (4 - 2 * progress) * progress;
+
+        window.scrollTo(0, start + distance * ease);
+
+        if (timeElapsed < duration) {
+            requestAnimationFrame(animacaoScroll);
+        }
+    }
+
+    requestAnimationFrame(animacaoScroll);
+}
+
 document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener("click", function(e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute("href"))
-            .scrollIntoView({ behavior: "smooth" });
+        const target = document.querySelector(this.getAttribute("href"));
+        scrollLento(target, 1200); // duração 1200ms (1.2s)
     });
 });
 
