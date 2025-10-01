@@ -107,28 +107,27 @@ nav {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    position: relative;
+}
+
+.section-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 50% de transparência */
+    z-index: 1;
+}
+
+.section-bg > * {
+    position: relative;
+    z-index: 2; /* Garante que o conteúdo fique sobre a camada de opacidade */
 }
 
 .sobre-nos-bg {
     background-image: url('/imagens/sobre.png');
-}
-
-.sobre-nos{
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 8px;
-    display: inline-block;
-    max-width: 800px;
-}
-
-h2{
-    margin-bottom: 30px;
-    color: #ff6600;
-}
-
-h3{
-    margin-bottom: 20px;
-    color: #000000;
 }
 
 .planos-bg {
